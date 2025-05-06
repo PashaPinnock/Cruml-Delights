@@ -8,6 +8,16 @@ body {
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 header {
   margin-bottom: 20px;
 }
@@ -64,6 +74,7 @@ footer {
   padding: 20px;
   color: #555;
   font-size: 0.9em;
+  text-align: center;
 }
 
 .btn-pink {
@@ -78,5 +89,36 @@ footer {
   border-color: #a12c70;
 }
 
-</style>
+.copyright-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fffafc;
+  border: 2px solid #c0398f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
+.copyright-container h1 {
+  color: #c0398f;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright-container p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.copyright-container a {
+  color: #c0398f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright-container a:hover {
+  text-decoration: underline;
+}
