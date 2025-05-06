@@ -1,0 +1,83 @@
+<style>
+/* PINKERIA THEME – Soft Pink & Elegant Typography */
+
+body {
+    background-color: #e6235e; /* soft pink */
+    font-family: 'Georgia', serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding: 40px;
+  }
+  
+  /* Left Text Block */
+  .text-block {
+    max-width: 40%;
+  }
+  
+  .text-block h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 0;
+  }
+  
+  .text-block h1 span {
+    font-family: 'Segoe Script', cursive;
+    font-size: 1rem;
+    color: #c0398f;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  
+  .text-block h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #000;
+    margin-top: 0;
+  }
+  
+  .text-block p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .text-block a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #c0398f;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .text-block a:hover {
+    color: #c0398f;
+  }
+  
+  /* Right Image Block */
+  .image-block {
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .image-block img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0 0 200px 200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  

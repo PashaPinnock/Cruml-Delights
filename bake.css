@@ -1,0 +1,82 @@
+<style>
+/* CSS.html - External Stylesheet for Karim's Delite Bakery */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffafc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #c0398f;
+}
+
+.hero {
+  background: linear-gradient(to right, #ffe4ec, #f8d6f0);
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: #c0398f;
+}
+
+.hero p {
+  font-size: 1.3em;
+  color: #555;
+}
+
+.hero-img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.featured-cakes {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.featured-cakes h2 {
+  margin-top: 15px;
+  font-size: 1.5em;
+  color: #c0398f;
+}
+
+.featured-cakes img {
+  border-radius: 12px;
+  max-height: 220px;
+}
+
+.api-section {
+  padding: 40px 20px;
+  background-color: #e3ffe9;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.btn-pink {
+  background-color: #c0398f;
+  border-color: #c0398f;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-pink:hover {
+  background-color: #a12c70;
+  border-color: #a12c70;
+}
+
+</style>
+

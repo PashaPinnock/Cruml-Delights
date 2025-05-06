@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Crumbl Delights Bakery</title>
+
+  <!-- Link to External Stylesheet (named CSS.html for project submission) -->
+  <link rel="stylesheet" href="bake.css" />
+
+  <!-- Bootstrap CSS for navigation only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+  <!-- Header with Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Crumbl Delights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <!-- Cart Icon -->
+            <li class="nav-item position-relative">
+              <a class="nav-link" href="cart.html">
+                🛒 Cart
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                  <span class="visually-hidden">items in cart</span>
+                </span>
+              </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Intro -->
+  <section class="text-center p-4 bg-light">
+    <h1>Our Bakery Products</h1>
+    <p>Made fresh daily. Taste the difference!</p>
+  </section>
+
+  <!-- Cakes -->
+  <section class="container my-5">
+    <h2>Cakes</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="vanilla.jpg" class="card-img-top" alt="Vanilla Cake">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Cake (Slice)</h5>
+            <p>JMD $450</p>
+            <h5 class="card-title">Vanilla Cake (Whole)</h5>
+            <p>JMD $2500</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="cheesecake.jpg" class="card-img-top" alt="Cheesecake">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake (Slice)</h5>
+            <p>JMD $650</p>
+            <h5 class="card-title">Cheesecake (Whole)</h5>
+            <p>JMD $3995</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="choco.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Cake (Slice)</h5>
+            <p>JMD $450</p>
+            <h5 class="card-title">Chocolate Cake (Whole)</h5>
+            <p>JMD $2500</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="plain.jpg" class="card-img-top" alt="Plain Cake">
+          <div class="card-body">
+            <h5 class="card-title">Plain Cake (Slice)</h5>
+            <p>JMD $450</p>
+            <h5 class="card-title">Plain Cake (Whole)</h5>
+            <p>JMD $2500</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="strawberry.jpg" class="card-img-top" alt="Strawberry Cake">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Cake (Slice)</h5>
+            <p>JMD $450</p>
+            <h5 class="card-title">Strawberry Cake (Whole)</h5>
+            <p>JMD $2500</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="oreo.jpg" class="card-img-top" alt="Oreo Cake">
+          <div class="card-body">
+            <h5 class="card-title">Oreo Cake (Slice)</h5>
+            <p>JMD $450</p>
+            <h5 class="card-title">Oreo Cake (Whole)</h5>
+            <p>JMD $2500</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bread -->
+  <section class="container my-5">
+    <h2>Bread</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="brown.jpg" class="card-img-top" alt="Brown Bread">
+          <div class="card-body">
+            <h5 class="card-title">Brown Bread</h5>
+            <p>JMD $550</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="white.jpg" class="card-img-top" alt="White Bread">
+          <div class="card-body">
+            <h5 class="card-title">White Bread</h5>
+            <p>JMD $550</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="wheat.jpg" class="card-img-top" alt="Wheat Bread">
+          <div class="card-body">
+            <h5 class="card-title">Wheat Bread</h5>
+            <p>JMD $550</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="raisin.jpg" class="card-img-top" alt="Raisin Bread">
+          <div class="card-body">
+            <h5 class="card-title">Raisin Bread</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="cornbread.jpg" class="card-img-top" alt="Cornbread">
+          <div class="card-body">
+            <h5 class="card-title">Cornbread</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buns -->
+  <section class="container my-5">
+    <h2>Buns</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="sugarbun.jpg" class="card-img-top" alt="Sugar Bun">
+          <div class="card-body">
+            <h5 class="card-title">Sugar Bun</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="spicebun.jpg" class="card-img-top" alt="Spice Bun">
+          <div class="card-body">
+            <h5 class="card-title">Spice Bun</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/easterbun.jpg" class="card-img-top" alt="Easter Bun">
+          <div class="card-body">
+            <h5 class="card-title">Easter Bun</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/cinnamonbun.jpg" class="card-img-top" alt="Cinnamon Bun">
+          <div class="card-body">
+            <h5 class="card-title">Cinnamon Bun</h5>
+            <p>JMD $170</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookies -->
+  <section class="container my-5">
+    <h2>Cookies</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/chocolatechip.jpg" class="card-img-top" alt="Chocolate Chip Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Chip Cookie</h5>
+            <p>JMD $30 each</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/hazelnut.jpg" class="card-img-top" alt="Hazelnut Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Hazelnut Cookie</h5>
+            <p>JMD $30 each</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/appleberry.jpg" class="card-img-top" alt="Apple Berry Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Apple Berry Cookie</h5>
+            <p>JMD $30 each</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/walnut.jpg" class="card-img-top" alt="Walnut Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Walnut Cookie</h5>
+            <p>JMD $30 each</p>
+            <button class="btn btn-sm btn-success" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-light p-3">
+    <p>&copy; 2025 Crumbl Delights Bakery | Contact: info@karimsdelite.com</p>
+    <p>Last Updated: May 1, 2025</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    let count = 0;
+    function addToCart() {
+      count++;
+      document.getElementById("cart-count").textContent = count;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

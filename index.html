@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Crumbl Delights Bakery</title>
+
+  <!-- Link to External Stylesheet (named CSS.html for project submission) -->
+  <link rel="stylesheet" href="bake.css" />
+
+  <!-- Bootstrap CSS for navigation only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+  <!-- Header with Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Crumbl Delights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <!-- Cart Icon -->
+            <li class="nav-item position-relative">
+              <a class="nav-link" href="cart.html">
+                🛒 Cart
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                  <span class="visually-hidden">items in cart</span>
+                </span>
+              </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <h1>Welcome to Crumbl Delights Bakery</h1>
+    <p>Sweeten your day with our handmade cupcakes and specialty cakes!</p>
+    <img src="cupcake.jpg" alt="Cupcakes" class="hero-img" />
+  </section>
+
+  <!-- Featured Cakes Section -->
+  <section class="featured-cakes">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="Vanilla.jpg" alt="Vanilla Cake" class="img-fluid" />
+          <h2>Vanilla Perfection</h2>
+        </div>
+        <div class="col-md-4">
+          <img src="strawberry.jpg" alt="Strawberry Delight" class="img-fluid" />
+          <h2>Strawberry Delight</h2>
+        </div>
+        <div class="col-md-4">
+          <img src="choco.jpg" alt="Chocolate Heaven" class="img-fluid" />
+          <h2>Chocolate Heaven</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Data Section -->
+  <section class="api-section text-center">
+    <h2>Today's Weather in Montego Bay</h2>
+    <p id="weatherData">Loading weather data...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Crumbl Delights Bakery | Contact: info@karimsdelite.com</p>
+    <p>Last Updated: May 1, 2025</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
